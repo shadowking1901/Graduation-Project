@@ -3025,7 +3025,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5645287506030316655}
-  - component: {fileID: 4977541637288957654}
   m_Layer: 0
   m_Name: model
   m_TagString: Untagged
@@ -3033,19 +3032,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &4977541637288957654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4977541637288957653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a66a452dbe9a5a408bdfb6d9166ae78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inkParticle: {fileID: 0}
 --- !u!4 &4989903704975672594
 Transform:
   m_ObjectHideFlags: 0
@@ -17534,7 +17520,7 @@ ParticleSystem:
     radiusScale: 0.15
     collidesWith:
       serializedVersion: 2
-      m_Bits: 119
+      m_Bits: 55
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -18584,7 +18570,6 @@ GameObject:
   - component: {fileID: 8232571927302389096}
   - component: {fileID: 8232571927302389094}
   - component: {fileID: 8232571927302389095}
-  - component: {fileID: 8232571927302389098}
   m_Layer: 4
   m_Name: Main Visual Particle
   m_TagString: Untagged
@@ -18592,19 +18577,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &8232571927302389098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8232571927302389097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a66a452dbe9a5a408bdfb6d9166ae78, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inkParticle: {fileID: 8232571927302389094}
 --- !u!1 &8232571927443988608
 GameObject:
   m_ObjectHideFlags: 0
