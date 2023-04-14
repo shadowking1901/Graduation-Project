@@ -1,5 +1,30 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8319032344751019245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99924fc21a1264e4898a2a384f5b1183, type: 3}
+  m_Name: NewRenderMetaballsScreenSpace
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  PassTag: RenderMetaballsScreenSpace
+  Event: 300
+  FilterSettings:
+    RenderQueueType: 1
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 16
+    PassNames: []
+  BlitMaterial: {fileID: 2100000, guid: 95391282e3f31ef4dada9756b388d99d, type: 2}
+  WriteDepthMaterial: {fileID: 2100000, guid: 3abad26229f1dfe418d9152127d1e435, type: 2}
+  BlurPasses: 3
+  BlurDistance: 0.5
 --- !u!114 &-1061407897173178259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,7 +61,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RendererFeatures:
   - {fileID: -1061407897173178259}
-  m_RendererFeatureMap: 6dc8321f241f45f1
+  - {fileID: -8319032344751019245}
+  m_RendererFeatureMap: 6dc8321f241f45f1136b219828dc8c8c
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
@@ -51,10 +77,10 @@ MonoBehaviour:
     materialErrorPS: {fileID: 4800000, guid: 5fd9a8feb75a4b5894c241777f519d4e, type: 3}
   m_OpaqueLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 231
   m_TransparentLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 231
   m_DefaultStencilState:
     overrideStencilState: 0
     stencilReference: 0
@@ -65,3 +91,28 @@ MonoBehaviour:
   m_ShadowTransparentReceive: 1
   m_RenderingMode: 0
   m_AccurateGbufferNormals: 0
+--- !u!114 &1031762986902324552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b90d4d026bd160745bd5174bebd515ec, type: 3}
+  m_Name: RenderMetaballsScreenSpace
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  PassTag: RenderMetaballsScreenSpace
+  Event: 300
+  FilterSettings:
+    RenderQueueType: 0
+    LayerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    PassNames: []
+  BlitMaterial: {fileID: 2100000, guid: 0f58e916d784da046b9ef21ca123e524, type: 2}
+  WriteDepthMaterial: {fileID: 2100000, guid: b246c0a49ffe56a45868f35b6dc2e5c3, type: 2}
+  BlurPasses: 3
+  BlurDistance: 0.54
